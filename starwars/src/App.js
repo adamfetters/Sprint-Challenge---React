@@ -28,11 +28,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        {this.state.starwarsChars.map((char, index) => <Card key={index} characters={char} />)}
+        {this.state.starwarsChars.map((char, index) => (
+          <Card key={index} characters={char} />
+        ))}
       </div>
     );
   }
 }
-
 
 export default App;
